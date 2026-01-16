@@ -1,0 +1,105 @@
+:root {
+  --bg-dark: #1a1a1f;
+  --bg-soft: #2a2730;
+  --accent: #d58aa8;
+  --accent-light: #e6a8c4;
+  --text-light: #f1f1f1;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  scroll-behavior: smooth;
+}
+#home {
+  background: radial-gradient(
+    circle at left,
+    rgba(213, 138, 168, 0.35),
+    var(--bg-dark) 60%
+  );
+}
+.card {
+  background-color: var(--bg-soft);
+  border: none;
+  border-radius: 20px;
+  color: var(--text-light);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(213, 138, 168, 0.3);
+}
+
+.card-title {
+  color: var(--accent-light);
+}
+.btn-dark {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  border: none;
+  color: #1a1a1f;
+  font-weight: 500;
+}
+
+.btn-dark:hover {
+  opacity: 0.9;
+}
+
+.skill-badge {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(213, 138, 168, 0.15);
+  color: var(--accent-light);
+  border: 1px solid rgba(213, 138, 168, 0.4);
+  font-size: 0.9rem;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(213, 138, 168, 0.35);
+}
+.project-tech {
+  display: inline-block;
+  margin: 4px 6px 0 0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--accent-light);
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.fade-delay-3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(213, 138, 168, 0.35);
+}
