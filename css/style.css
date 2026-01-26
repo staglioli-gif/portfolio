@@ -103,3 +103,50 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(213, 138, 168, 0.35);
 }
+#skills {
+  background-color: radial-gradient /* o tu fondo */
+}
+
+#skills h2 {
+  font-weight: 600;
+   
+}
+
+#skills .card {
+  border-radius: 12px;
+}
+
+/* ===== MOBILE FIRST ===== */
+@media (max-width: 768px) {
+
+  /* Home */
+  #home {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  h1.display-4 {
+    font-size: 2.2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Botones */
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  /* Navbar */
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  /* Cards */
+  .card {
+    margin-bottom: 20px;
+  }
+
+}
